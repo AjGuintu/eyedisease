@@ -1,7 +1,7 @@
-av==10.0.0
-numpy==1.23.5
-opencv_python==4.8.1.78
-Pillow==10.0.1
-PyYAML==6.0.1
-streamlit==1.28.1
-streamlit_webrtc==0.47.1
+av
+numpy
+opencv_python
+Pillow
+PyYAML
+streamlit
+streamlit_webrtc
