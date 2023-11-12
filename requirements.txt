@@ -1,6 +1,6 @@
 av
 numpy
-opencv_python
+opencv-python-headless
 Pillow
 PyYAML
 streamlit
