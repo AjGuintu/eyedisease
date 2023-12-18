@@ -4,18 +4,18 @@ st.set_page_config(page_title="Home",
                    layout='wide',
                    page_icon='./images/home.png')
 
-st.title("Cataract and Glaucoma Detection")
-st.caption('This project demostrate Glaucoma and Cataract Detection through Retinal Images')
+st.title("Cataract and Glaucoma Classification and Detection")
+st.caption('This project demostrates Cataract and Glaucoma Classification and Detection through fundus Images')
 
 # Content
 st.markdown("""
-### Detect Glaucoma and Cataract
-- Automatically detects  objects from image
-- [Click here for App](/YOLO_for_image/)  
+### Classify and Detect Cataract and Glaucoma
+- Detect and Classify Types of Cataract and Glaucoma from fundus image
+- Detect Cataract and Glaucoma in Real-Time
+ 
 
-Below give are the object the our model will detect
-1. Cataract
-2. Normal
-3. Glaucoma
+Below give are the object that our model will detect and classify
+1. Types of Cataract
+2. Types of Glaucoma
            
             """)
