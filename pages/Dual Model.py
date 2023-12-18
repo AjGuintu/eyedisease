@@ -1,5 +1,5 @@
 import streamlit as st
-from yolo_predictions2 import YOLO_Pred
+from yolo_predictions import YOLO_Pred
 from PIL import Image
 import numpy as np
 from reportlab.lib.pagesizes import letter
