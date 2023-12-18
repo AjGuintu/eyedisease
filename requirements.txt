@@ -7,5 +7,4 @@ PyYAML
 streamlit
 streamlit_webrtc
 reportlab
-skimage
 scikit-image
