@@ -1,5 +1,5 @@
 import streamlit as st
-from yolo_predictions2 import YOLO_Pred
+from yolo_predictions import YOLO_Pred
 from PIL import Image
 import numpy as np
 from reportlab.lib.pagesizes import letter
@@ -313,7 +313,7 @@ def get_glaucoma_severity(equivalent_diameter):
     elif 0.15 <= equivalent_diameter < 0.21:
         return ("No Abnormalities")
     elif 0.21 <= equivalent_diameter < 0.30:
-        return ("Potential for Mild Impairment")
+        return ("Normal")
     elif equivalent_diameter >= 0.30:
         return ("Normal")
     
@@ -323,7 +323,7 @@ def get_cataract_severity(mean_magnitude):
     elif 115 <= mean_magnitude <= 118:
         return ("No Abnormalities")
     elif 105<= mean_magnitude < 115:
-        return ("Potential for Mild Impairment")
+        return ("Normal")
     elif mean_magnitude < 104   :
         return ("Potential for Eye Disease")
 
@@ -482,9 +482,9 @@ def main():
             if mean_magnitude > 118:
                st.success("Normal")
             elif 115 <= mean_magnitude <= 118:
-               st.warning("No Abnormalities")
+               st.success("Normal")
             elif 105<= mean_magnitude < 115:
-               st.warning("Potential for Mild Impairment")
+               st.success("Normal")
             elif mean_magnitude < 104   :
                st.success("Normal")
 
@@ -500,7 +500,7 @@ def main():
                 elif 0.15 <= equivalent_diameter < 0.21:
                     st.warning("No Abnormalities")
                 elif 0.21 <= equivalent_diameter < 0.30:
-                    st.warning("Potential for Mild Impairment")
+                    st.success("Normal")
                 elif equivalent_diameter >= 0.30:
                     st.error("Potential for eye disease")
             else:
